@@ -36,7 +36,22 @@ flex-direction:column;
 min-height:100vh;
 
 }
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:30px 50px;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+z-index:1000;
+}
 
+header img{
+height:70px;
+width:auto;
+}
 main{
 flex:1;
 display:flex;
@@ -66,6 +81,12 @@ font-size:15px;
 </head>
 
 <body>
+
+<header>
+
+<img src="logo.png" alt="ORICO">
+
+</header>
 
 <main>
 
