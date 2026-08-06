@@ -42,17 +42,56 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:12px 20px;
+height:110px;
+
 display:flex;
-justify-content:flex-start;
-align-items:flex-start;
+align-items:center;
+justify-content:space-between;
+
+padding:10px 35px;
+
 z-index:1000;
 }
 
-header img{
+.logo{
+width:280px;
+display:flex;
+align-items:center;
+}
+
+.logo img{
 height:155px;
 width:auto;
+display:block;
 filter:drop-shadow(0 6px 18px rgba(255,255,255,.35));
+}
+
+nav{
+flex:2;
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:#083C3D;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#F58220;
+}
+
+.idioma{
+width:180px;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+font-size:28px;
+gap:12px;
 }
 main{
 flex:1;
@@ -86,7 +125,29 @@ font-size:15px;
 
 <header>
 
-<img src="logo.png" alt="ORICO">
+<div class="logo">
+    <img src="logo.png" alt="ORICO">
+</div>
+
+<nav>
+
+<a href="#inicio">Inicio</a>
+
+<a href="#quienes">Quiénes Somos</a>
+
+<a href="#sectores">Sectores</a>
+
+<a href="#clientes">Clientes y Aliados</a>
+
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+<div class="idioma">
+
+🇻🇪 🇬🇧
+
+</div>
 
 </header>
 
