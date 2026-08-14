@@ -194,25 +194,25 @@ overflow:hidden;
 
 position:absolute;
 
-left:90px;
+left:clamp(15px,4vw,80px);
 
-top:46%;
+top:50%;
 
 transform:translateY(-50%);
 
-width:420px;
+width:clamp(260px,30vw,420px);
 
-padding:40px;
+min-height:320px;
 
-min-height:380px;
-background: rgba(255,255,255,.07);
+padding:clamp(20px,2vw,35px);
+
+background:rgba(255,255,255,.08);
+
 backdrop-filter:blur(12px);
 
 border-radius:20px;
 
-border:none;
-
-box-shadow:0 15px 40px rgba(0,0,0,.18);
+box-shadow:0 15px 40px rgba(0,0,0,.15);
 
 z-index:10;
 
