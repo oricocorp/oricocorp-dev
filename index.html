@@ -192,45 +192,31 @@ max-width:1600px;
 margin:auto;
 
 }
-.hero-box{
+.hero-media{
 
 width:100%;
 
-min-height:420px;
+height:520px;
 
-padding:40px;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(12px);
+overflow:hidden;
 
 border-radius:22px;
 
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
+box-shadow:0 30px 70px rgba(0,0,0,.25);
 
 }
 .hero-video{
 
-width:min(72vw,1100px);
+width:100%;
 
-aspect-ratio:16/9;
-
-height:auto;
+height:100%;
 
 display:block;
 
 object-fit:cover;
 
-border-radius:22px;
+pointer-events:none;
 
-box-shadow:0 30px 70px rgba(0,0,0,.35);
-pointer-events: none;
 }
 
 /*==========================
@@ -431,11 +417,15 @@ border-radius:15px;
 
 </div>
 
-<video autoplay muted loop playsinline class="hero-video">
+<div class="hero-media">
 
-<source src="video.mp4.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline class="hero-video">
 
-</video>
+        <source src="video.mp4.mp4" type="video/mp4">
+
+    </video>
+
+</div>
 
 </section>
 
