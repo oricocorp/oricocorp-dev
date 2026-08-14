@@ -190,7 +190,33 @@ padding:40px 0 60px;
 overflow:hidden;
 
 }
+.hero-box{
 
+position:absolute;
+
+left:60px;
+
+top:50%;
+
+transform:translateY(-50%);
+
+width:360px;
+
+height:380px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.20);
+
+box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+z-index:10;
+
+}
 .hero-video{
 
 width:min(72vw,1100px);
@@ -403,13 +429,15 @@ border-radius:15px;
 
 <section id="inicio" class="hero">
 
+<div class="hero-box">
+
+</div>
+
 <video autoplay muted loop playsinline class="hero-video">
 
 <source src="video.mp4.mp4" type="video/mp4">
 
 </video>
-
-
 
 </section>
 
