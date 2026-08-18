@@ -284,10 +284,109 @@ max-width:380px;
 margin-top:15px;
 
 }
+
 /*==========================
-FOOTER
+SECTORES HOME
 ==========================*/
 
+.sector-grid{
+
+max-width:1600px;
+
+margin:35px auto 70px;
+
+padding:0 40px;
+
+display:grid;
+
+grid-template-columns:repeat(6,1fr);
+
+gap:18px;
+
+}
+
+.sector-card{
+
+position:relative;
+
+height:190px;
+
+border-radius:18px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+border:2px solid transparent;
+transition:.35s;
+
+box-shadow:0 12px 30px rgba(0,0,0,.20);
+
+}
+
+.sector-card img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:transform .45s;
+
+}
+
+.sector-card::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+right:0;
+bottom:0;
+
+height:45%;
+
+background:linear-gradient(to top,
+rgba(0,0,0,.75),
+rgba(0,0,0,0));
+}
+
+.sector-card span{
+
+position:absolute;
+
+left:18px;
+
+bottom:16px;
+
+color:#fff;
+
+font-size:20px;
+
+font-weight:700;
+
+z-index:2;
+
+}
+
+.sector-card:hover{
+
+border-color:#F58220;
+
+transform:translateY(-6px);
+
+}
+
+.sector-card:hover img{
+
+transform:scale(1.08);
+
+} 
+/*==========================
+FOOTER
+==========================*/    
 footer{
 
 background:#083C3D;
