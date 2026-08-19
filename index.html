@@ -457,62 +457,57 @@ height:auto;
 
 }
 
-/* Tablet */
-@media (max-width:992px){
+/* Laptop */
+@media (max-width:1366px){
 
 header{
 
-display:flex;
+    grid-template-columns:260px 1fr;
 
-flex-direction:column;
-
-height:auto;
-
-padding:15px;
+    padding:8px 25px;
 
 }
 
-.logo{
+.logo img{
 
-justify-content:center;
-
-}
-
-nav{
-
-margin-top:15px;
-
-flex-wrap:wrap;
+    height:125px;
 
 }
 
 nav a{
 
-font-size:15px;
+    font-size:15px;
 
-padding:8px 10px;
-
-border:none;
-
-}
-
-.hero{
-
-height:auto;
-
-padding:30px 0;
+    padding:0 12px;
 
 }
 
 .hero-video{
 
-width:min(82vw,900px);
+    width:100%;
 
-aspect-ratio:16/9;
+    max-width:100%;
 
-height:auto;
+    aspect-ratio:16/9;
+
+    height:auto;
 
 }
+
+.sector-grid{
+
+    padding:0 40px 0 420px;
+
+    grid-template-columns:repeat(3,160px);
+
+    justify-content:center;
+
+    row-gap:18px;
+
+    column-gap:18px;
+
+}
+
 }
 
 /* Celular */
